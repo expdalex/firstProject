@@ -1,5 +1,5 @@
 'use strict';
- let a = 7;
+let a = 7;
 console.log(a);
 /*let person = {
     name: "Alex",
