@@ -7,7 +7,7 @@ let answer2 = +prompt("Во сколько обойдется?");
 
 
 let expenses = {
-    answer1 : answer2
+    answer1: answer2
 }
 
 let optionalExpennses = {
