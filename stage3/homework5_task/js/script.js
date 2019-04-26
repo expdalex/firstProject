@@ -21,7 +21,7 @@ menu.appendChild(menuItem5);
 
 document.body.style.background = 'url(img/apple_true.jpg)';
 
-title.textContent = 'Мы продаем только подлинную технику Apple';
+document.getElementById('title').textContent = 'Мы продаем только подлинную технику Apple';
 
 column[1].removeChild(adv);
 
