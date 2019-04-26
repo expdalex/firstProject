@@ -90,12 +90,12 @@ optionalexpensesBtn.addEventListener('click', function(){
 
 countBudgetBtn.addEventListener('click', function(){
     if (appData.budget != undefined) {
-        let sum = 0;
-        for(let key in appData.expenses){
+        let sum = expensesValue.textContent;
+        /*for(let key in appData.expenses){
             sum += +appData.expenses[key];
-        }
+        }*/
         console.log(sum);
-        appData.moneyOneDay = ((appData.budget - sum)/30).toFixed();
+        appData.moneyOneDay = ((appData.budget - +sum)/30).toFixed();
         daybudgetValue.textContent = appData.moneyOneDay;
     
         if (appData.moneyOneDay <=100) {
