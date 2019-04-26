@@ -90,7 +90,7 @@ optionalexpensesBtn.addEventListener('click', function(){
 
 countBudgetBtn.addEventListener('click', function(){
     if (appData.budget != undefined) {
-        let sum = expensesValue.textContent; //а можно из поля expensesValue блока result
+        let sum = expensesValue.textContent; //а можно из поля expensesValue блока result;
         /*for(let key in appData.expenses){  //можно взять сумму обязательных расходов из appData, только let sum =0;
             sum += +appData.expenses[key];
         }*/
