@@ -35,6 +35,8 @@ window.addEventListener("DOMContentLoaded", function(){
             }
         });
     }
+    
+    //переменные
     let tab = document.querySelectorAll('.info-header-tab'),
         headerTabsBox = document.querySelector('.info-header'),
         tabContent = document.querySelectorAll('.info-tabcontent');
