@@ -8,3 +8,30 @@
     border-radius: 10px;
 
 }
+.box{
+    background: blue;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left:0px;
+    top: 0px;
+    padding: 0;
+    margin: 0;
+}
+.frame{
+    padding: 0px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+}
+.btn-block{
+    background: yellow;
+
+}
+.btn-block button{
+    background: #fff;
+    width: 50px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px
+}
