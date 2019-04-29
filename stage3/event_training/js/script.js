@@ -8,17 +8,6 @@ window.addEventListener('DOMContentLoaded', function(){
     //     e.target.style.background = 'brown';
     //     console.log(e.target + 'поменяла цвет на ' + e.target.style.background);
 
-    // });
-
-    // btn.addEventListener('touchmove', function(e){
-    //     console.log('touchmove');
-
-    // });
-    
-    // btn.addEventListener('touchend', function(e){
-    //     console.log('touchend');
-
-    // });
     
     // let timerID = setTimeout(function log(){
     //     console.log('hello!');
