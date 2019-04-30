@@ -21,6 +21,10 @@ window.addEventListener('DOMContentLoaded', function(){
         }
     }
 
-    let newDiv = new options('200px', '200px','red','16px','center');
-    newDiv.createDiv();
+    let newDiv1 = new options('200px', '200px','red','16px','center'),
+        newDiv2 = new options('200px', '200px','green','16px','center'),
+        newDiv3 = new options('200px', '200px','blue','16px','center');
+    newDiv1.createDiv();
+    newDiv2.createDiv();
+    newDiv3.createDiv();
 });
