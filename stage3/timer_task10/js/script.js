@@ -116,4 +116,6 @@ window.addEventListener("DOMContentLoaded", function(){
         setClock('timer', deadline);
     }
     timer(deadline);
+
+    
 });
