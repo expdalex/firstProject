@@ -151,6 +151,23 @@ window.addEventListener("DOMContentLoaded", function(){
     }
     
     //form  
+    function requestPOST(form, request){
+        request.open('POST', 'server.php');
+        //request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); //xml-формат запроса
+        request.setRequestHeader('Content-Type', 'application/json; charset=utf-8');    // json
+
+        let formData = new FormData(form);
+        
+        let obj = {};
+
+        formData.forEach(function(value, key){ //перевод данных из formData в объект ключ-значение
+            obj[key] = value;
+        });
+
+        let json = JSON.stringify(obj);
+
+        request.send(json);
+    }
     
     let message = {
         loading: 'Загрузка...',
@@ -170,21 +187,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
         let request = new XMLHttpRequest();
 
-        request.open('POST', 'server.php');
-        //request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); //xml-формат запроса
-        request.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
-
-        let formData = new FormData(form);
-        
-        let obj = {};
-
-        formData.forEach(function(value, key){ //перевод данных из formData в объект ключ-значение
-            obj[key] = value;
-        });
-
-        let json = JSON.stringify(obj);
-
-        request.send(json);
+        requestPOST(form,request);
 
         request.addEventListener('readystatechange', function(){
             if (request.readyState < 4) {
@@ -212,20 +215,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
         let request = new XMLHttpRequest();
 
-        request.open('POST', 'server.php');
-        request.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
-
-        let formData = new FormData(contactForm);
-
-        let obj = {};
-
-        formData.forEach(function(value, key){ //перевод данных из formData в объект ключ-значение
-            obj[key] = value;
-        });
-
-        let json = JSON.stringify(obj);
-
-        request.send(json);
+        requestPOST(contactForm, request);
 
         request.addEventListener('readystatechange', function(){
             if (request.readyState < 4) {
